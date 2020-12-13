@@ -1,7 +1,7 @@
 
 .grid-container{
     display: grid;
-    grid-template-columns: 200px 700px auto;
+    grid-template-columns: 100px 800px auto;
     grid-template-rows: 100px 500px auto;
     grid-gap: 20px;
     padding: 20px;
@@ -20,11 +20,11 @@
 }
 
 .nav{
-    grid-column: 2 / span 2;
+    grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     background-color:#f4b7c7;
-    word-spacing: 80px;
-    width: 680px;
+    word-spacing: 60px;
+    width: 900px;
     height: 70px;
     padding: 20px;
     
@@ -39,7 +39,7 @@
 }
 
 .connect{
-    grid-column: 3 / span 3;
+    grid-column: 3 / span 1;
     grid-row: 1 / span 1;
     background-color:#f4b7c7;
     justify-items: right;
