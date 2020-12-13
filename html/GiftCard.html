@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Shop</title>
+    <title>Gift Card</title>
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/giftCard.css">
     <script src="../JS.js"></script> 
@@ -47,14 +47,14 @@
                     </p>
                     <form>
                         <label for="amount">Choose the amount: </label>
-                        <input type="text" placeholder="How much?" name="amount" required>
+                        <input id= "amountGift" type="text" placeholder="How much?" name="amount" required>
                         <br>
                         <label for="receiverName">Receiver's Name: </label>
-                        <input type="text" placeholder="To whom?" name="receiverName" required>
+                        <input  id= "receiverNameGift" type="text" placeholder="To whom?" name="receiverName" required>
                         <label for="receiverPhone">Receiver's Phone: </label>
-                        <input type="text" placeholder="To whom?" name="receiverPhone" required>
+                        <input  id= "receiverNamePhone" type="tel" placeholder="05X-XXX-XXXX" name="receiverPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
                         <br>
-                        <button type="submit" class="sendButton" onclick="MessBox()"> <b>Add to Card</b></button>
+                        <button type="submit" class="sendButton" onclick="MessBox()"> Add to Card</button>
                     </form>
 
 
