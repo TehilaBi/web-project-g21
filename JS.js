@@ -21,6 +21,7 @@ function validateGiftInput(amount,email) {
 
     if(ValidAmount==true && ValidEmail==true){
         alert("Add to cart successfully!");
+        window.open('../html/general.html');
     }
 
     
@@ -29,12 +30,12 @@ function validateGiftInput(amount,email) {
 
 function MessBox_contactMe(){
     alert("Thank you! Your message has been received");
-    location.href='../html/general.html';
+    window.open('../html/general.html');
 
 }
 
 function MessBox_connect(){
     alert("Connect successfully!");
-    location.href='../html/general.html';
+    window.open('../html/general.html');
 
 }
