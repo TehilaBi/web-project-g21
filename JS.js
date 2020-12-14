@@ -22,7 +22,9 @@ function validateGiftInput(amount,email) {
     if(ValidAmount==true && ValidEmail==true){
         alert("Add to cart successfully!");
         window.open('../html/general.html');
-    }
+        window.close('../html/GiftCard.html');
+        
+      }
 
     
   }
