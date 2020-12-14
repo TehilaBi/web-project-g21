@@ -39,7 +39,7 @@
         <div class="main">
             <div class="grid-container2">
                 <img class="img" src="../image/Gift Card 2.png" alt= "GiftCard" >
-                <div class="text">
+                <div class="text1">
                     <p>
                         You can purchase a gift card for a birthday, to say goodbye to a colleague, 
                         <br>
@@ -51,10 +51,10 @@
                         <br>
                         <label for="receiverName">Receiver's Name: </label>
                         <input  id= "receiverNameGift" type="text" placeholder="To whom?" name="receiverName" required>
-                        <label for="receiverPhone">Receiver's Phone: </label>
-                        <input  id= "receiverNamePhone" type="tel" placeholder="05X-XXX-XXXX" name="receiverPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                        <label for="receiverEmail">Receiver's Email: </label>
+                        <input  id= "receiverNameEmail" type="text" placeholder="To whom?" name="receiverEmail" required>
                         <br>
-                        <button type="submit" class="sendButton" onclick="MessBox()"> Add to Card</button>
+                        <button type="submit" class="sendButton" onclick="validateGiftInput(document.getElementById('amountGift').value,document.getElementById('receiverNameEmail').value)"> Add to Card</button>
                     </form>
 
 
