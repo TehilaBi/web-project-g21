@@ -4,6 +4,8 @@
 <head>
     <title>Connect</title>
     <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/connect.css">
+    <script src="../JS.js"></script> 
 </head>
 <body>
     <div class="grid-container">
@@ -34,27 +36,31 @@
         
 
         <div class="main">
+            <div class="grid-container2">
+                <div class="text">
 
-            <h1 style="color: lightpink;">Registration</h1>
+            <h1 style="color: #f4b7c7; text-align: center;">Registration</h1>
 
             <form>
     
-                <label for="FirstName"> <b>First Name:</b> </label> <br>
+                <label for="FirstName"> <b>First Name:</b> </label>
                 <input type="text" id="FirstName" name="FirstName" placeholder="Enter your first name .." style="width: 30%; height: 50px;">
-                <br><br>
-                <label for="LastName"><b>Last Name:</b></label><br>
+                <br>
+                <label for="LastName"><b>Last Name:</b></label>&nbsp;
                 <input type="text" id="LastName" name="LastName" placeholder="Enter your last name .." style="width: 30%; height: 50px;" >
-                <br><br>
-                <label for="Email"><b>Email:</b></label><br>
+                <br>
+                <label for="Email"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" id="Email" name="Email" placeholder="Enter your Email Address .." style="width: 30%; height: 50px;">
-                <br><br>
-                <label for="pwd"><b>Password:</b></label><br>
+                <br>
+                <label for="pwd"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="password" id="pwd" name="pwd" maxlength="8" placeholder="Choose a password (max 8 digits)" style="width: 30%; height: 50px;">
-                <br> <br>
-                <label for="submit"></label>
-                <input type="submit" value="Registration" style="background-color: lightpink; width: 30%; height: 50px;">
+                <br> 
+                <button type="submit" class="sendB" onclick="MessBox_connect()">Go!</button>
+
             
             </form>
+        </div>
+    </div>
 
         </div>
 
