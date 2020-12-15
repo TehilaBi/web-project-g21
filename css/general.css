@@ -2,7 +2,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: 100px 1000px auto;
-    grid-template-rows: 100px 500px auto;
+    grid-template-rows: 100px auto 50px;
     padding: 20px;
 }
 
