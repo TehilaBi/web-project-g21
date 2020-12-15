@@ -1,10 +1,11 @@
 .grid-container2{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 50px 250px 250px;
+    grid-template-rows: 50px 225px 225px;
     grid-gap: 0px;
-    padding: 20px;
+    padding: 0px;
     justify-items: center;
+    font-family: cursive;
 }
     
 
@@ -13,6 +14,9 @@
     grid-row: 1 / span 1;
     text-decoration: none;
     text-align: center;
+    
+    
+    
 }
 
 .Alfajores{
@@ -84,11 +88,7 @@
 
 }
 
-#text{
-    font-family: cursive;
-    color: black;
-    font-size: 20px;
-}
+
 
 #popup:hover{
     width: 200px;
