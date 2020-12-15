@@ -2,7 +2,7 @@
 .grid-container2{
     display: grid;
     grid-template-columns: 200px 700px auto;
-    grid-template-rows: 170px 100px auto;
+    grid-template-rows: 150px 100px auto;
     grid-gap: 20px;
     padding: 20px;
     justify-items: center;
@@ -38,7 +38,7 @@
     font-size: 25px;
     font-family: cursive;
     padding: 20px;
-    margin: 8px 0;
+    margin: 8px;
     border: none;
     cursor: pointer;
     opacity: 0.8;
