@@ -46,3 +46,10 @@ function MessBox_connect(){
     
 
 }
+
+
+function addedToCart(){
+    alert("The product added to the cart!");
+    window.open('../html/shop.html');
+    window.close();
+}
