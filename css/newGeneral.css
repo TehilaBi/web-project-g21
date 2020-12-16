@@ -1,0 +1,107 @@
+html, body{
+   margin: 0%;
+}
+
+.grid-container1{
+  display: grid;
+  grid-template-columns: 400px 600px ;
+  grid-template-rows: 120px ;
+  padding: 10px;
+}
+
+.header{
+  height: 120px;
+  grid-row: 1 / span 1;
+
+}
+
+.logoImg{
+
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#logoImg{
+  background-color:lightpink;
+  border-radius: 100%;
+  width: 100px; 
+  padding: 1px; 
+}
+
+.titleName{
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#titleName{
+  color: lightpink;
+  text-decoration: none;
+  font-family: alphab;
+  font-size: 80px;
+  text-align: left;
+  padding-left: 80px;
+}
+
+
+
+.nav{
+  background-color: #FFF5EE;
+  display: grid;
+  grid-template-columns: 1000px auto;
+  grid-template-rows: 80px;
+  height: 80px;
+}
+
+.navbar{
+  grid-column: 1 / span 1;
+  word-spacing: 60px;  
+  text-align: left;
+  padding-left: 80px;
+
+
+}
+
+.text{
+  color: lightpink;
+  text-decoration: none;
+  font-family: alphab;
+  font-size: 40px;
+
+}
+.connect{
+  grid-column: 2 / span 1;
+
+}
+
+#connectImg{
+  width: 60px;
+  height: auto;
+  text-align: left;
+  padding-left: 260px;
+
+}
+#shopImg{
+  width: 42px;
+  height: auto;
+
+
+}
+
+.footer{
+  background-color: #FFF5EE;
+  display: grid;
+  grid-template-columns:  auto;
+  grid-template-rows: 80px;
+  height: 80px;
+}
+#footer{
+  
+  text-align: center;
+}
+
+
+@font-face{
+  font-family: alphab;
+  src: url("../Alphabetized\ Cassette\ Tapes\ Classic.ttf");
+}
+
