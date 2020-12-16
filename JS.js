@@ -21,7 +21,7 @@ function validateGiftInput(amount,email) {
 
     if(ValidAmount==true && ValidEmail==true){
         alert("Add to cart successfully!");
-        window.open('../html/general.html');
+        window.open('../html/newGeneral.html');
         window.close();
     
       }
@@ -32,7 +32,7 @@ function validateGiftInput(amount,email) {
 
 function MessBox_contactMe(){
     alert("Thank you! Your message has been received");
-    window.open('../html/general.html');
+    window.open('../html/newGeneral.html');
     window.close();
 
 
@@ -40,7 +40,7 @@ function MessBox_contactMe(){
 
 function MessBox_connect(){
     alert("Connect successfully!");
-    window.open('../html/general.html');
+    window.open('../html/newGeneral.html');
     window.close();
 
     
@@ -50,7 +50,7 @@ function MessBox_connect(){
 
 function addedToCart(){
     alert("The product added to the cart!");
-    window.open('../html/general.html');
+    window.open('../html/newGeneral.html');
     window.close();
 }
 
