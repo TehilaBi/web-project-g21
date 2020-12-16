@@ -8,13 +8,14 @@
 }
 
 
-.text{
+.text1{
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
     text-decoration: none;
     font-family: cursive;
     font-size: 20px;
     text-align: left;
+    color:lightpink;
 }
 
 
