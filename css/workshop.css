@@ -1,9 +1,9 @@
 .grid-container2{
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-columns: auto auto auto auto;
     grid-template-rows: 130px auto;
-    grid-gap: 20px;
-    padding: 20px;
+    justify-items: center;
+
 }
     
 
@@ -14,6 +14,7 @@
     text-align: center;
     line-height: 40px;
 }
+
 
 .cake{
     grid-column: 1 / span 1;
