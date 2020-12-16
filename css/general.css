@@ -9,7 +9,7 @@
 .logo{
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    background-color:#f4b7c7;
+    background-color:#FFFAFA;
     width: 180px;
     height: 70px;
     padding: 20px;
@@ -21,7 +21,7 @@
 .nav{
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    background-color:#f4b7c7;
+    background-color:#FFFAFA;
     word-spacing: 60px;
     width: 1000px;
     height: 70px;
@@ -41,7 +41,7 @@
 .connect{
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
-    background-color:#f4b7c7;
+    background-color:#FFFAFA;
     justify-items: right;
     height: 70px;
     padding: 20px;
@@ -70,7 +70,7 @@
 .footer{
     grid-column: 1 / span 3;
     grid-row: 3 / span 3;
-    background-color:#f4b7c7;
+    background-color:#FFFAFA;
     height: 70px;
     padding: 20px;
     text-align: center;
