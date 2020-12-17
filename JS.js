@@ -50,7 +50,6 @@ function MessBox_contactMe(email){
     window.open('../html/newGeneral.html');
     window.close();
 
-
 }
 }
 
@@ -61,9 +60,35 @@ function MessBox_connect(){
     window.open('../html/newGeneral.html');
     window.close();
 
-    
-
 }
+
+
+function signUpClick() {
+  var x = document.getElementById("signup");
+  var y = document.getElementById("signin");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+function signInClick() {
+  var x = document.getElementById("signin");
+  var y = document.getElementById("signup");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+
 
 
 function addedToCart(){
