@@ -66,7 +66,7 @@
                 <label for="Comment"></label>
                 <textarea id="Comment" name="Comment" cols="50" rows="4" placeholder="Write a comment .." style="width: 92%; height: 150px;"></textarea>
                 <br> 
-                <button type="submit" class="sendB" onclick="MessBox_contactMe()"  value="Close">Send</button> 
+                <button type="submit" class="sendB" onclick="MessBox_contactMe(document.getElementById('Email').value )"  value="Close">Send</button> 
 
             
             </form>

@@ -30,13 +30,31 @@ function validateGiftInput(amount,email) {
   }
 
 
-function MessBox_contactMe(){
+function MessBox_contactMe(email){
+  var ValidEmail;
+
+  // If email adress is valid 
+  if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+      ValidEmail=true;
+  } else {
+      ValidEmail=false;
+      alert("Please enter valid Email adress");
+
+  }
+  
+  if(ValidEmail==true){
+    alert("Add to cart successfully!");
+    window.open('../html/newGeneral.html');
+    window.close();
     alert("Thank you! Your message has been received");
     window.open('../html/newGeneral.html');
     window.close();
 
 
 }
+}
+
+
 
 function MessBox_connect(){
     alert("Connect successfully!");
