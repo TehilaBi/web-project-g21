@@ -46,10 +46,12 @@
             <div class="grid-container2">
                 <div class="text1">
 
-            <h1 style="color: #f4b7c7; text-align: center;">Registration</h1>
+            <h1 style="color: #f4b7c7; text-align: center;">Connect</h1>
             
-
-            <form>
+            <div style="text-align: center;">
+            <button class="sendB" onclick="signUpClick()">Sign Up</button>
+            <button class="sendB" onclick="signInClick()">Sign In</button></div>
+            <form id="signup" style="display: none;"> 
     
                 <label for="FirstName"> <b>First Name:</b> </label>
                 <input type="text" id="FirstName" name="FirstName" placeholder="Enter your first name .." style="width: 30%; height: 50px;">
@@ -62,6 +64,19 @@
                 <br>
                 <label for="pwd"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="password" id="pwd" name="pwd" maxlength="8" placeholder="Choose a password (max 8 digits)" style="width: 30%; height: 50px;">
+                <br>
+                <button type="submit" class="sendB" onclick="MessBox_connect()"  value="Close">Go!</button>
+
+            
+            </form>
+
+            <form id="signin" style="display: none;"> 
+    
+                <label for="Email"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="Email" name="Email" placeholder="Enter Email address you sign up with .." style="width: 30%; height: 50px;">
+                <br>
+                <label for="pwd"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" id="pwd" name="pwd" maxlength="8" placeholder="Enter your password" style="width: 30%; height: 50px;">
                 <br>
                 <button type="submit" class="sendB" onclick="MessBox_connect()"  value="Close">Go!</button>
 
