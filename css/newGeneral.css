@@ -16,7 +16,6 @@ html, body{
 }
 
 .logoImg{
-
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
 }
@@ -42,10 +41,7 @@ html, body{
   padding-left: 80px;
 }
 
-
-
 .nav{
-  background-color: #FFF5EE;
   display: grid;
   grid-template-columns: 850px auto;
   grid-template-rows: 80px;
@@ -54,11 +50,10 @@ html, body{
 
 .navbar{
   grid-column: 1 / span 1;
+  background-color: #FFF5EE;
   word-spacing: 60px;  
   text-align: left;
   padding-left: 80px;
-
-
 }
 
 .text{
@@ -66,26 +61,24 @@ html, body{
   text-decoration: none;
   font-family: alphab;
   font-size: 40px;
-
 }
+
 .connect{
   grid-column: 2 / span 1;
+  background-color: #FFF5EE;
   text-align: right;
   padding-right: 10px;
-
+  padding: 10px;
 }
 
 #connectImg{
   width: 60px;
   height: auto;
-
 }
+
 #shopImg{
   width: 42px;
   height: auto;
-
-
-
 }
 
 .footer{
@@ -95,8 +88,8 @@ html, body{
   grid-template-rows: 80px;
   height: 80px;
 }
+
 #footer{
-  
   text-align: center;
 }
 
