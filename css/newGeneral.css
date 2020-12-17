@@ -57,10 +57,13 @@ html, body{
 }
 
 .text{
-  color: lightpink;
+  
   text-decoration: none;
   font-family: alphab;
   font-size: 40px;
+}
+#active{
+  color: lightpink;
 }
 
 .connect{
