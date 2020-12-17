@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Workshop</title>
+    <title>Breads Workshop | Chloe's Cookies</title>
     <link rel="stylesheet" href="../css/newGeneral.css">
     <link rel="stylesheet" href="../css/specificWorkshop.css">
     <script src="../JS.js"></script> 
@@ -30,7 +30,7 @@
                 <a href="../html/about.html" class="text">About</a> 
                 <a href="../html/Shop.html" class="text">Shop</a>
                 <a href="../html/Recipes.html" class="text">Recipes</a>
-                <a href="../html/Workshops.html" class="text">Workshops</a>
+                <a href="../html/Workshops.html" class="text" id="active">Workshops</a>
                 <a href="../html/GiftCard.html" class="text">GiftCard</a>
             </div>
 
@@ -55,8 +55,12 @@
                         <br>
                         Price: 70 NIS
                     <p>
+
+                    <label id="text" for="Date">Choose Date:</label>
+                    <input type="date" id="dateWorkshop" name="dateWorkshop" >
+                    <br><br>
                    
-                 <button type="submit" class="Add" onclick="addedToCart()" value="Close"  > Add to Cart</button>
+                 <button type="submit" class="Add" onclick="validateDate(document.getElementById('dateWorkshop').value)" value="Close"  > Add to Cart</button>
                     
                 </div>
                 <div class="img">

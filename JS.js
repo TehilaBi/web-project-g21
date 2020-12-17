@@ -28,6 +28,40 @@ function validateGiftInput(amount,email) {
 
   }
 
+  function validateDate(date){
+    var today = new Date();
+    var yearT = today.getFullYear();
+    var yearD = date.substring(0,4);
+    var monthT = today.getMonth() + 1;
+    var monthD = date.substring(5,7);
+    var dayT = today.getDate();
+    var dayD = date.substring(8,10);
+
+    if(yearD==yearT){
+      if(monthD<monthT){
+       alert("Please enter a valid date");
+      }
+      else if(monthD==monthT && dayD<dayT){
+       alert("Please enter a valid date");
+      }
+      else {
+        alert("The workshop added to the cart!");
+        window.open('../html/newGeneral.html');
+        window.close();
+      }
+    }
+    else if(yearD<yearT){
+      alert("Please enter a valid date");
+    }
+    else{
+      alert("The workshop added to the cart!");
+      window.open('../html/newGeneral.html');
+      window.close();
+    }
+    
+
+  }
+
 
 function MessBox_contactMe(phone,email){
   var ValidPhone, ValidEmail;
