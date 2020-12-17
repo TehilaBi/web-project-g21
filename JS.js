@@ -138,7 +138,20 @@ function signInClick() {
   }
 }
 
-function forgotPassword(){
+function forgotPassword(EmailAdress){
+
+  var newPass = Math.random().toString(36).slice(-8);
+
+  Email.send({ 
+    Host: "smtp.gmail.com", 
+    Username: "chloecookies.isreal@gmail.com", 
+    Password: "Chloe123!", 
+    To: EmailAdress, 
+    From: "chloecookies.isreal@gmail.com", 
+    Subject: "Your Chloe's Cookies new password is ready" , 
+    Body: "Your new password is " + newPass +"." + " I will be happy to see you,Chloe.", 
+  })  
+ 
   alert("New password sent to your Email!");
   window.open('../html/newGeneral.html');
   window.close();

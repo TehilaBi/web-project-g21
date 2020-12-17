@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/newGeneral.css">
     <link rel="stylesheet" href="../css/connect.css">
     <script src="../JS.js"></script> 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <div class = "header">
@@ -73,13 +74,13 @@
             <form id="signin" style="display: none;"> 
     
                 <label for="Email"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" id="Email" name="Email" placeholder="Enter Email address you sign up with .." style="width: 30%; height: 50px;">
+                <input type="text" id="Email2" name="Email" placeholder="Enter Email address you sign up with .." style="width: 30%; height: 50px;">
                 <br>
                 <label for="pwd"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="password" id="pwd" name="pwd" maxlength="8" placeholder="Enter your password" style="width: 30%; height: 50px;">
                 <br>
-                <button type="submit" class="sendB" onclick="MessBox_connect(document.getElementById('Email').value)"  value="Close">Go!</button>
-                <button class="sendB" onclick="forgotPassword()"  value="close">Forgot my password</button>
+                <button type="submit" class="sendB" onclick="MessBox_connect(document.getElementById('Email2').value)"  value="Close">Go!</button>
+                <button class="sendB" onclick="forgotPassword(document.getElementById('Email2').value)"  value="close">Forgot my password</button>
 
             </form>
 
