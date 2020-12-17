@@ -15,7 +15,7 @@ function validateGiftInput(amount,email) {
         ValidEmail=true;
     } else {
         ValidEmail=false;
-        alert("Please enter valid Email adress");
+        alert("Please enter valid Email address");
 
     }
 
@@ -26,26 +26,31 @@ function validateGiftInput(amount,email) {
     
       }
 
-    
   }
 
 
-function MessBox_contactMe(email){
-  var ValidEmail;
-
-  // If email adress is valid 
+function MessBox_contactMe(phone,email){
+  var ValidPhone, ValidEmail;
+  var re = /^[0-9]{0,20}$/im;
+  // checks if email address is valid 
   if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
       ValidEmail=true;
   } else {
       ValidEmail=false;
-      alert("Please enter valid Email adress");
+      alert("Please enter valid Email address");
 
   }
+
+  if(re.test(phone)) {
+    ValidPhone=true;
+  }
+  else {
+    ValidPhone=false;
+    alert("Please enter valid Phone Number");
+
+}
   
-  if(ValidEmail==true){
-    alert("Add to cart successfully!");
-    window.open('../html/newGeneral.html');
-    window.close();
+  if(ValidEmail==true && ValidPhone==true){
     alert("Thank you! Your message has been received");
     window.open('../html/newGeneral.html');
     window.close();
@@ -54,13 +59,26 @@ function MessBox_contactMe(email){
 }
 
 
+function MessBox_connect(email){
 
-function MessBox_connect(){
+  var ValidEmail;
+
+  // checks if email address is valid 
+  if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+      ValidEmail=true;
+  } else {
+      ValidEmail=false;
+      alert("Please enter valid Email address");
+
+  }
+  if(ValidEmail==true){
     alert("Connect successfully!");
     window.open('../html/newGeneral.html');
     window.close();
+  }
 
 }
+
 
 
 function signUpClick() {
@@ -86,8 +104,11 @@ function signInClick() {
   }
 }
 
-
-
+function forgotPassword(){
+  alert("New password sent to your Email!");
+  window.open('../html/newGeneral.html');
+  window.close();
+}
 
 
 

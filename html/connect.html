@@ -65,7 +65,7 @@
                 <label for="pwd"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="password" id="pwd" name="pwd" maxlength="8" placeholder="Choose a password (max 8 digits)" style="width: 30%; height: 50px;">
                 <br>
-                <button type="submit" class="sendB" onclick="MessBox_connect()"  value="Close">Go!</button>
+                <button type="submit" class="sendB" onclick="MessBox_connect(document.getElementById('Email').value)"  value="Close">Go!</button>
 
             
             </form>
@@ -78,10 +78,14 @@
                 <label for="pwd"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="password" id="pwd" name="pwd" maxlength="8" placeholder="Enter your password" style="width: 30%; height: 50px;">
                 <br>
-                <button type="submit" class="sendB" onclick="MessBox_connect()"  value="Close">Go!</button>
+                <button type="submit" class="sendB" onclick="MessBox_connect(document.getElementById('Email').value)"  value="Close">Go!</button>
+                <button class="sendB" onclick="forgotPassword()"  value="close">Forgot my password</button>
 
-            
             </form>
+
+        </div>
+
+
                 </div>
             </div>
         </div>
