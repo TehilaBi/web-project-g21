@@ -1,10 +1,10 @@
 
 .grid-container2{
     display: grid;
-    grid-template-columns: 100px 800px auto;
-    grid-template-rows: 100px 500px auto;
-    grid-gap: 20px;
-    padding: 20px;
+    grid-template-columns: 300px auto auto;
+    grid-template-rows: 450px 100px;
+    grid-gap: 40px;
+    padding: 25px;
 }
 
 
@@ -15,7 +15,7 @@
     font-family: cursive;
     font-size: 20px;
     text-align: left;
-    color:lightpink;
+    color:black;
 }
 
 

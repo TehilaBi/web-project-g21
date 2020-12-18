@@ -63,8 +63,8 @@ function validateGiftInput(amount,email) {
   }
 
 // validation and messages of contact me 
-function MessBox_contactMe(phone,email){
-  var ValidPhone, ValidEmail;
+function MessBox_contactMe(phone,email,text){
+  var ValidPhone, ValidEmail,ValidText;
   var re = /^[0-9]{0,20}$/im;
   // checks if email address is valid 
   if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
@@ -82,8 +82,16 @@ function MessBox_contactMe(phone,email){
     alert("Please enter valid Phone Number");
 
 }
+
+if (!isNaN(text)) {
+  ValidText = false;
+  alert("Please write something ..");
+} else {
+  ValidText=true;
+}
+
   
-  if(ValidEmail==true && ValidPhone==true){
+  if(ValidEmail==true && ValidPhone==true && ValidText==true){
     alert("Thank you! Your message has been received");
     window.open('../html/newGeneral.html');
     window.close();
@@ -330,3 +338,20 @@ for (var j = 0; j < btns.length; j++) {
     this.className += " active";
   });
 }
+
+
+// button of read more or less for about page
+function read_more_less() {
+  var btn = document.getElementById("btn");
+  var txt = document.getElementById("text");
+    var minText = "lalalala <br> ... "
+  var fullText = "lalalala <br> lolololo <br> lolololo <br> lolololo <br> lolololo <br> lolololo";
+
+  if (btn.value == 'Read More') {
+      btn.value = 'Read Less';
+      txt.innerHTML = fullText;
+  } else {
+      btn.value = 'Read More';
+      txt.innerHTML = minText;
+      }
+  }
