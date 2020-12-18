@@ -36,6 +36,7 @@
     grid-row: 1 / span 1;
     height: 50px;
     padding-top: 40px;
+    border-radius: 50%;
 }
 
 

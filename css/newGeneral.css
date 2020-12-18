@@ -96,7 +96,15 @@ html, body{
   text-align: center;
 }
 
+@keyframes pulse{
+  0%,100%{
+      background-color:  #f4b7c7;
+  }
+  50%{
+      background-color:  #c2667f;
+  }
 
+}
 @font-face{
   font-family: alphab;
   src: url("../Alphabetized\ Cassette\ Tapes\ Classic.ttf");
