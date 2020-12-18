@@ -344,8 +344,13 @@ for (var j = 0; j < btns.length; j++) {
 function read_more_less() {
   var btn = document.getElementById("btn");
   var txt = document.getElementById("text");
-    var minText = "lalalala <br> ... "
-  var fullText = "lalalala <br> lolololo <br> lolololo <br> lolololo <br> lolololo <br> lolololo";
+    var minText = "Chloe's Cookies is a private boutique bakery <br> " +
+    "that specializes in baking cookies, cakes, pastries and desserts for various events." + "<br> ...";
+  var fullText = "Chloe's Cookies is a private boutique bakery <br> " +
+  "that specializes in baking cookies, cakes, pastries and desserts for various events.<br>" +
+  "Chloe Meuda, the owner of the bakery, <br> is a student of industrial engineering and management at Ben-Gurion.<br>" +
+  "Since childhood she used to bake with her mother,  <br> and making pastries and cakes for every occasion. <br>" +
+   "<b>Opening the bakery was a way to spread her love for the profession.</b>";
 
   if (btn.value == 'Read More') {
       btn.value = 'Read Less';
