@@ -348,7 +348,7 @@ function read_more_less() {
     "that specializes in baking cookies, cakes, pastries and desserts for various events." + "<br> ...";
   var fullText = "Chloe's Cookies is a private boutique bakery <br> " +
   "that specializes in baking cookies, cakes, pastries and desserts for various events.<br>" +
-  "Chloe Meuda, the owner of the bakery, <br> is a student of industrial engineering and management at Ben-Gurion.<br>" +
+  "Chloe Mauda, the owner of the bakery, <br> is a student of industrial engineering and management at Ben-Gurion.<br>" +
   "Since childhood she used to bake with her mother,  <br> and making pastries and cakes for every occasion. <br>" +
    "<b>Opening the bakery was a way to spread her love for the profession.</b>";
 
