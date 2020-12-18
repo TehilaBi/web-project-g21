@@ -49,8 +49,8 @@
             <h1 style="color: #f4b7c7; text-align: center;">Connect</h1>
             
             <div style="text-align: center;">
-            <button class="sendB" onclick="signUpClick()">Sign Up</button>
-            <button class="sendB" onclick="signInClick()">Sign In</button></div>
+            <button class="sendB" onclick="signUpClick(),able_fn(),able_ln(),able_e_u(),able_p_u(), disdable_e_i(), disable_p_i()">Sign Up</button>
+            <button class="sendB" onclick="signInClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Sign In</button></div>
             <form id="signup" style="display: none;"> 
     
                 <label for="FirstName"> <b>First Name:</b> </label>
@@ -59,26 +59,27 @@
                 <label for="LastName"><b>Last Name:</b></label>&nbsp;
                 <input type="text" id="LastName" name="LastName" placeholder="Enter your last name .." style="width: 30%; height: 50px;" >
                 <br>
-                <label for="Email"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" id="Email" name="Email" placeholder="Enter your Email Address .." style="width: 30%; height: 50px;">
+                <label for="Emailup"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="Emailup" name="Emailup" placeholder="Enter your Email Address .." style="width: 30%; height: 50px;">
                 <br>
-                <label for="pwd"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="password" id="pwd" name="pwd" maxlength="8" placeholder="Choose a password (max 8 digits)" style="width: 30%; height: 50px;">
+                <label for="pwdup"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" id="pwdup" name="pwdup" maxlength="8" placeholder="Choose a password (max 8 digits)" style="width: 30%; height: 50px;">
                 <br>
-                <button type="submit" class="sendB" onclick="MessBox_connect(document.getElementById('Email').value)"  value="Close">Go!</button>
+                <button type="submit" class="sendB" onclick="MessBox_connectUP(document.getElementById('FirstName').value,document.getElementById('LastName').value,document.getElementById('Emailup').value,document.getElementById('pwdup').value)"  value="Close">Go!</button>
 
             
             </form>
 
-            <form id="signin" style="display: none;"> 
+            <form id="signin" style="display: none;" > 
+
     
-                <label for="Email"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" id="Email" name="Email" placeholder="Enter Email address you sign up with .." style="width: 30%; height: 50px;">
+                <label for="Emailin"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="Emailin" name="Emailin" placeholder="Enter Email address you sign up with .." style="width: 30%; height: 50px;">
                 <br>
-                <label for="pwd"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="password" id="pwd" name="pwd" maxlength="8" placeholder="Enter your password" style="width: 30%; height: 50px;">
+                <label for="pwdin"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" id="pwdin" name="pwdin" maxlength="8" placeholder="Enter your password" style="width: 30%; height: 50px;">
                 <br>
-                <button type="submit" class="sendB" onclick="MessBox_connect(document.getElementById('Email').value)"  value="Close">Go!</button>
+                <button type="submit" class="sendB" onclick="MessBox_connectIN(document.getElementById('Emailin').value,document.getElementById('pwdin').value)"   value="Close">Go!</button>
                 <button class="sendB" onclick="forgotPassword()"  value="close">Forgot my password</button>
 
             </form>

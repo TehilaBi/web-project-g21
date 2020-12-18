@@ -62,7 +62,7 @@ function validateGiftInput(amount,email) {
 
   }
 
-
+// validation and messages of contact me 
 function MessBox_contactMe(phone,email){
   var ValidPhone, ValidEmail;
   var re = /^[0-9]{0,20}$/im;
@@ -73,8 +73,7 @@ function MessBox_contactMe(phone,email){
       ValidEmail=false;
       alert("Please enter valid Email address");
 
-  }
-
+  }// checks if phone is valid (0 to 20 characters)
   if(re.test(phone)) {
     ValidPhone=true;
   }
@@ -92,20 +91,43 @@ function MessBox_contactMe(phone,email){
 }
 }
 
-
-function MessBox_connect(email){
+// validation and messages of sign up connect 
+function MessBox_connectUP(fname,lname,email,pas){
 
   var ValidEmail;
+  var ValidName;
+  var ValidPas;
 
   // checks if email address is valid 
-  if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) ) {
       ValidEmail=true;
-  } else {
-      ValidEmail=false;
-      alert("Please enter valid Email address");
+  } else{
+    ValidEmail=false;
+    alert("Please enter valid Email address");
+}
 
+  if (!isNaN(fname)) {
+    ValidName = false;
+    alert("Please enter First name ");
+  } else {
+    ValidName=true;
   }
-  if(ValidEmail==true){
+
+  if (!isNaN(lname)) {
+    ValidName = false;
+    alert("Please enter Last name");
+  } else {
+    ValidName=true;
+  }
+
+  if (isNaN(pas)) {
+    ValidPas = false;
+    alert("Choose password!");
+  } else {
+    ValidPas=true;
+  }
+
+  if(ValidEmail==true && ValidName==true && ValidPas==true ){
     alert("Connect successfully!");
     window.open('../html/newGeneral.html');
     window.close();
@@ -113,8 +135,37 @@ function MessBox_connect(email){
 
 }
 
+// validation and messages of sign in connect
+function MessBox_connectIN(email,pas){
 
+  var ValidEmail;
+  var ValidPas;
 
+  // checks if email address is valid 
+
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) ) {
+      ValidEmail=true;
+  } else{
+    ValidEmail=false;
+    alert("Please enter valid Email address");
+}
+
+  if (isNaN(pas)) {
+    ValidPas = false;
+    alert("select password!");
+  } else {
+    ValidPas=true;
+  }
+
+  if(ValidEmail==true &&  ValidPas==true){
+    alert("Connect successfully!");
+    window.open('../html/newGeneral.html');
+    window.close();
+  }
+
+}
+
+// by press sign up - sing in display off
 function signUpClick() {
   var x = document.getElementById("signup");
   var y = document.getElementById("signin");
@@ -126,7 +177,7 @@ function signUpClick() {
   }
 }
 
-
+// by press sign in - sign up display off
 function signInClick() {
   var x = document.getElementById("signin");
   var y = document.getElementById("signup");
@@ -138,6 +189,71 @@ function signInClick() {
   }
 }
 
+
+// able and disable fields in the forms
+function disable_fn(){
+  document.getElementById('FirstName').disabled=true;
+
+}
+
+function able_fn(){
+  document.getElementById('FirstName').disabled=false;
+
+}
+
+function disable_ln(){
+  document.getElementById('LastName').disabled=true;
+
+}
+
+function able_ln(){
+  document.getElementById('LastName').disabled=false;
+
+}
+
+function disable_e_u(){
+  document.getElementById('Emailup').disabled=true;
+
+}
+
+function able_e_u(){
+  document.getElementById('Emailup').disabled=false;
+
+}
+
+
+function disable_p_u(){
+  document.getElementById('pwdup').disabled=true;
+
+}
+
+function able_p_u(){
+  document.getElementById('pwdup').disabled=false;
+
+}
+
+function disdable_e_i(){
+  document.getElementById('Emailin').disabled=true;
+
+}
+
+function able_e_i(){
+  document.getElementById('Emailin').disabled=false;
+
+}
+
+function disable_p_i(){
+  document.getElementById('pwdin').disabled=true;
+
+}
+
+function able_p_i(){
+  document.getElementById('pwdin').disabled=false;
+
+}
+
+
+// press forgot password
 function forgotPassword(){
   alert("New password sent to your Email!");
   window.open('../html/newGeneral.html');
