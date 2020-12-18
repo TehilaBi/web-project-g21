@@ -189,72 +189,20 @@ function signInClick() {
   }
 }
 
+function forgotPassword(EmailAdress){
 
-// able and disable fields in the forms
-function disable_fn(){
-  document.getElementById('FirstName').disabled=true;
+  var newPass = Math.random().toString(36).slice(-8);
 
-}
-
-function able_fn(){
-  document.getElementById('FirstName').disabled=false;
-
-}
-
-function disable_ln(){
-  document.getElementById('LastName').disabled=true;
-
-}
-
-function able_ln(){
-  document.getElementById('LastName').disabled=false;
-
-}
-
-function disable_e_u(){
-  document.getElementById('Emailup').disabled=true;
-
-}
-
-function able_e_u(){
-  document.getElementById('Emailup').disabled=false;
-
-}
-
-
-function disable_p_u(){
-  document.getElementById('pwdup').disabled=true;
-
-}
-
-function able_p_u(){
-  document.getElementById('pwdup').disabled=false;
-
-}
-
-function disdable_e_i(){
-  document.getElementById('Emailin').disabled=true;
-
-}
-
-function able_e_i(){
-  document.getElementById('Emailin').disabled=false;
-
-}
-
-function disable_p_i(){
-  document.getElementById('pwdin').disabled=true;
-
-}
-
-function able_p_i(){
-  document.getElementById('pwdin').disabled=false;
-
-}
-
-
-// press forgot password
-function forgotPassword(){
+  Email.send({ 
+    Host: "smtp.gmail.com", 
+    Username: "chloecookies.isreal@gmail.com", 
+    Password: "Chloe123!", 
+    To: EmailAdress, 
+    From: "chloecookies.isreal@gmail.com", 
+    Subject: "Your Chloe's Cookies new password is ready" , 
+    Body: "Your new password is " + newPass +"." + " I will be happy to see you,Chloe.", 
+  })  
+ 
   alert("New password sent to your Email!");
   window.open('../html/newGeneral.html');
   window.close();
