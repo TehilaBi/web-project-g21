@@ -189,6 +189,73 @@ function signInClick() {
   }
 }
 
+
+
+// able and disable fields in the forms
+function disable_fn(){
+  document.getElementById('FirstName').disabled=true;
+
+}
+
+function able_fn(){
+  document.getElementById('FirstName').disabled=false;
+
+}
+
+function disable_ln(){
+  document.getElementById('LastName').disabled=true;
+
+}
+
+function able_ln(){
+  document.getElementById('LastName').disabled=false;
+
+}
+
+function disable_e_u(){
+  document.getElementById('Emailup').disabled=true;
+
+}
+
+function able_e_u(){
+  document.getElementById('Emailup').disabled=false;
+
+}
+
+
+function disable_p_u(){
+  document.getElementById('pwdup').disabled=true;
+
+}
+
+function able_p_u(){
+  document.getElementById('pwdup').disabled=false;
+
+}
+
+function disdable_e_i(){
+  document.getElementById('Emailin').disabled=true;
+
+}
+
+function able_e_i(){
+  document.getElementById('Emailin').disabled=false;
+
+}
+
+function disable_p_i(){
+  document.getElementById('pwdin').disabled=true;
+
+}
+
+function able_p_i(){
+  document.getElementById('pwdin').disabled=false;
+
+}
+
+
+
+
 function forgotPassword(EmailAdress){
 
   var newPass = Math.random().toString(36).slice(-8);
