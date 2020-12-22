@@ -4,7 +4,7 @@ html, body{
 
 .grid-container1{
   display: grid;
-  grid-template-columns: 400px 600px ;
+  grid-template-columns: 350px 550px auto;
   grid-template-rows: 120px ;
   padding: 10px;
 }
@@ -30,6 +30,9 @@ html, body{
 .titleName{
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
+  text-align: left;
+  padding-left: 20px;
+
 }
 
 #titleName{
@@ -37,8 +40,25 @@ html, body{
   text-decoration: none;
   font-family: alphab;
   font-size: 80px;
-  text-align: left;
-  padding-left: 80px;
+}
+.socialNetworks{
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  justify-items: center;
+}
+
+.fa {
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: deeppink;
+  padding: 5px;
+
+}
+
+
+.icon i:hover{
+color:lightpink;
 }
 
 .nav{
@@ -62,6 +82,14 @@ html, body{
   font-family: alphab;
   font-size: 40px;
 }
+.textE{
+  color:black;
+  text-decoration: none;
+  font-family: alphab;
+  font-size: 30px;
+  justify-items: center;
+}
+
 #active{
   color: lightpink;
 }
@@ -90,11 +118,10 @@ html, body{
   grid-template-columns:  auto;
   grid-template-rows: 80px;
   height: 80px;
+  justify-items: center;
 }
 
-#footer{
-  text-align: center;
-}
+
 
 @keyframes pulse{
   0%,100%{
