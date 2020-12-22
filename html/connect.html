@@ -89,7 +89,7 @@
                 <input type="password" id="pwdin" name="pwdin" maxlength="8" placeholder="Enter your password" style="width: 30%; height: 50px;">
                 <br>
                 <button type="submit" class="sendB" onclick="MessBox_connectIN(document.getElementById('Emailin').value,document.getElementById('pwdin').value)"   value="Close">Go!</button>
-                <button class="sendB" onclick="forgotPassword()"  value="close">Forgot my password</button>
+                <button class="sendB" onclick="forgotPassword(document.getElementById('Emailin').value)"  value="close">Forgot my password</button>
 
             </form>
 
