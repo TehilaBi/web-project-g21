@@ -287,11 +287,16 @@ function forgotPassword(EmailAdress){
     From: "chloecookies.isreal@gmail.com", 
     Subject: "Your Chloe's Cookies new password is ready" , 
     Body: "Your new password is " + newPass +"." + " I will be happy to see you,Chloe.", 
-  })  
- 
-  alert("New password sent to your Email!");
-  window.open('../html/newGeneral.html');
-  window.close();
+  }) 
+  
+  if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(EmailAdress) ) {
+    alert("New password sent to your Email!");
+    window.open('../html/newGeneral.html');
+    window.close();
+} else{
+  alert("Please enter valid Email address");
+}
+
 }
 
 
