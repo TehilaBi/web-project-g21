@@ -62,7 +62,7 @@ function validateGiftInput(amount,email) {
 
   }
 
-// validation and messages of contact me 
+// validation and messages of contact me page
 function MessBox_contactMe(phone,email,text){
   var ValidPhone, ValidEmail,ValidText;
   var re = /^[0-9]{0,20}$/im;
@@ -73,7 +73,7 @@ function MessBox_contactMe(phone,email,text){
       ValidEmail=false;
       alert("Please enter valid Email address");
 
-  }// checks if phone is valid (0 to 20 characters)
+  }// checks if phone is valid (0 to 20 characters) but not a must as input
   if(re.test(phone)) {
     ValidPhone=true;
   }
@@ -82,7 +82,7 @@ function MessBox_contactMe(phone,email,text){
     alert("Please enter valid Phone Number");
 
 }
-
+ // text is a must
 if (!isNaN(text)) {
   ValidText = false;
   alert("Please write something ..");
@@ -99,6 +99,7 @@ if (!isNaN(text)) {
 }
 }
 
+
 // validation and messages of sign up connect 
 function MessBox_connectUP(fname,lname,email,pas){
 
@@ -114,6 +115,7 @@ function MessBox_connectUP(fname,lname,email,pas){
     alert("Please enter valid Email address");
 }
 
+// checks name is not empty
   if (!isNaN(fname)) {
     ValidName = false;
     alert("Please enter First name ");
@@ -121,6 +123,7 @@ function MessBox_connectUP(fname,lname,email,pas){
     ValidName=true;
   }
 
+  // checks name is not empty
   if (!isNaN(lname)) {
     ValidName = false;
     alert("Please enter Last name");
@@ -128,14 +131,17 @@ function MessBox_connectUP(fname,lname,email,pas){
     ValidName=true;
   }
 
-  if (isNaN(pas)) {
-    ValidPas = false;
-    alert("Choose password!");
-  } else {
-    ValidPas=true;
-  }
+  // checks password is not empty
+  if (pas.value.length == 0)
+  { 
+     alert("Please choose a password");  	
+     ValidPas= false; 
+  }  	else {
+      ValidPas= true; 
+}
 
-  if(ValidEmail==true && ValidName==true && ValidPas==true ){
+// success
+  if(ValidEmail==true && ValidName==true &&  ValidPas==true){
     alert("Connect successfully!");
     window.open('../html/newGeneral.html');
     window.close();
@@ -158,20 +164,25 @@ function MessBox_connectIN(email,pas){
     alert("Please enter valid Email address");
 }
 
-  if (isNaN(pas)) {
-    ValidPas = false;
-    alert("select password!");
-  } else {
-    ValidPas=true;
-  }
+// checks password is not empty
+  if (pas.value.length == 0)
+  { 
+     alert("Please enter password");  	
+     ValidPas= false; 
+  }  	else {
+      ValidPas= true; 
+}
 
-  if(ValidEmail==true &&  ValidPas==true){
-    alert("Connect successfully!");
-    window.open('../html/newGeneral.html');
-    window.close();
-  }
+// success
+if(ValidEmail==true &&  ValidPas==true){
+  alert("Connect successfully!");
+  window.open('../html/newGeneral.html');
+  window.close();
+}
 
 }
+
+
 
 // by press sign up - sing in display off
 function signUpClick() {
