@@ -46,3 +46,13 @@ h3{
 .Add:hover {
     opacity: 1;
 }
+
+.btn {
+    background-color:  #f4b7c7;
+    font-size: 15px;
+    font-family: cursive;
+    padding: 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;

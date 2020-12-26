@@ -26,3 +26,35 @@
     height: 350px;
     border-radius: 60px;   
 }
+
+#pics {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+    width: 400px;
+    height: 350px;
+    background-image: url("../image/Big coockie.jpg");
+    background-size: 100% 100%;
+    animation: anim1 ease-in-out 20s infinite;
+}
+
+@keyframes anim1 {
+    0%{
+        background-image: url("../image/Chip Cookies.jpg");
+    }
+    25%{
+        background-image: url("../image/Alfajores.jpg");
+
+    }
+    50%{
+        background-image: url("../image/Pancake.jpg");
+
+    }
+    75%{
+        background-image: url("../image/logo.jpeg");
+
+    }
+    100%{
+        background-image: url("../image/Chip Cookies.jpg");
+
+    }
+}
