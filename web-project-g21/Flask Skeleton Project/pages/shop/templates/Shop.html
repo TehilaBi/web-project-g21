@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Shop | Chloe's Cookies</title>
+    <link rel="stylesheet" href="{{ url_for('shop.static', filename= '/css/shop.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= '/css/general.css') }}">
+    <script src="{{ url_for('static', filename='js/JS.js') }}"></script>
+
+    
+</head>
+<body>
+    <div class = "header">
+        <div class="grid-container1">
+
+            <div class="logoImg">
+                <img id="logoImg" src="{{url_for('static', filename='images/logo.jpeg') }}" alt= "logo">
+            </div>
+               
+            <div class="titleName">
+               
+                <a id="titleName">Chloe's Cookies</a>
+            </div>
+            <div class="socialNetworks">
+                <br><br>
+                <a class="icon" href="https://www.instagram.com/chloe_cookies_/"><i class="fa fa-instagram"></i></a>
+                <a class="icon" href="https://wa.me/972542483012" ><i class="fa fa-whatsapp"></i></a>
+                <a class="icon" href="https://www.facebook.com/Chloes-Cookies-109434714280348" ><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="nav">
+
+           <div class= "navbar">
+                <br>
+                <a href='/' class="text">&nbsp;Home</a>
+                <a href='/about' class="text" id="active">About</a>
+                <a href='/Shop' class="text">Shop</a>
+                <a href='/Recipes' class="text">Recipes</a>
+                <a href='/Workshops' class="text">Workshops</a>
+                <a href='/GiftCard' class="text">GiftCard</a>
+            </div>
+
+
+            <div class="connect">
+                <br>
+                <a  href="/connect"><img id="connectImg" src="{{url_for('static', filename='images/connect.png') }}" alt= "connect" ></a>
+                <a><img id="shopImg" src="{{url_for('static', filename='images/shopBag.png') }}" alt= "shopBag" ></a>
+            </div>
+        
+    </div>
+
+        <div class="main">
+            <div class="grid-container2">
+                <div id="myBtnContainer" class="text1">
+                    <button class="btn active" onclick="filterSelection('all')" > Show all</button>
+                    <button class="btn" onclick="filterSelection('cakes')"> Cakes</button>
+                    <button class="btn" onclick="filterSelection('cookies')"> Cookies</button>
+                    <button class="btn" onclick="filterSelection('pastries')"> Pastries</button>
+ 
+                </div>
+                  
+                <div class="Alfajores"> 
+                       <div class="filterDiv cookies"> 
+                             <a href="../html/product.html"><img id="popup" src="{{ url_for('shop.static', filename= '/images/Alfajores.jpg') }}" alt= "Alfajores" width="180px" height="125px"></a>
+                             <p id="text"> Alfajores</p>
+                        </div>
+                </div>
+
+                <div class="Amsterdam">
+                    <div class="filterDiv cookies"> 
+                        <a href="/product"><img  id="popup" src="{{ url_for('shop.static', filename= '/images/Amsterdam.jpg') }}" alt= "cookies" width="180px" height="125px"></a>
+                        <p id="text">Amsterdam Cookies</p>
+                   </div>
+                    
+                </div>
+
+                <div class="ChipCookies">
+                    <div class="filterDiv cookies"> 
+                        <a href="/product"><img id="popup"  src="{{ url_for('shop.static', filename= '/images/ChipCookies.jpg') }}" alt= "vegan" width="180px" height="125px"></a>
+                        <p id="text">Chocolate Chip Cookies</p>
+                   </div>
+                    
+                </div>
+
+                <div class="creamPuff">
+                    <div class="filterDiv pastries"> 
+                        <a href="/product"><img id="popup" src="{{ url_for('shop.static', filename= '/images/creamPuff.jfif') }}" alt= "bread" width="180px" height="125px"></a>
+                        <p id="text"> Cream Puff</p>
+                   </div>
+                    
+                </div>
+
+                <div class="doughnut">
+                    <div class="filterDiv pastries"> 
+                        <a href="/product"><img id="popup" src="{{ url_for('shop.static', filename= '/images/doughnut.jpg') }}" alt= "cake" width="180px" height="125px"></a>
+                        <p id="text"> Doughnut</p>
+                   </div>
+                    
+                </div>
+
+                <div class="BigCookie">
+                    <div class="filterDiv cookies"> 
+                        <a href="/product"><img  id="popup" src="{{ url_for('shop.static', filename= '/images/BigCookie.jpg') }}" alt= "cookies" width="180px" height="125px"></a>
+                        <p id="text">Big Cookie</p>
+                   </div>
+
+                </div>
+
+                <div class="Cake">
+                    <div class="filterDiv cakes"> 
+                        <a href="/product"><img id="popup"  src="{{ url_for('shop.static', filename= '/images/cake2.jpeg') }}" alt= "vegan" width="180px" height="125px"></a>
+                        <p id="text"> 8 flavors Cake</p>
+                   </div>                 
+                </div>
+
+                <div class="Bread">
+                    <div class="filterDiv pastries"> 
+                        <a href="/product"><img id="popup" src="{{ url_for('shop.static', filename= '/images/bread2.jpg') }}" alt= "bread" width="180px" height="125px"></a>
+                        <p id="text"> Bread</p>
+                   </div>  
+                    
+                </div>                
+            </div>
+
+        </div>
+
+
+
+       
+    <div class="footer">
+        <div id="footer">
+            <br>
+            <a href="/contact me" class="text">Contact Me</a>
+            <a class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</a>
+            <a class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipping Policy</a>
+            <a class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Newsletter</a>
+        </div>
+        <p class="textE" >Recommended resolution: 1440*900</p>
+
+        
+    </div>
+
+
+
+
+
+
+</body>
+
+
+</html>
+

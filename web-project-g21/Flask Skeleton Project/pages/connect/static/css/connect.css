@@ -1,0 +1,54 @@
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: 300px auto auto;
+    grid-template-rows: 450px 100px;
+    grid-gap: 40px;
+    padding: 25px;
+}
+
+
+.text1{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: left;
+    color:black;
+}
+
+
+
+::placeholder{
+    font-family: cursive;
+    font-size: 15px;
+}
+
+input[type=text] {
+    margin: 14px ;
+    display: inline-block;
+}
+
+.sendB {
+        background-color:  #FFF5EE;
+        font-size: 25px;
+        font-family: cursive;
+        padding: 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        border-radius: 50%;
+        
+}
+
+.sendB:hover {
+    opacity: 1;
+}
+
+
+@font-face{
+    font-family: alphab;
+    src: url("../Alphabetized\ Cassette\ Tapes\ Classic.ttf");
+}

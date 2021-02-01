@@ -1,0 +1,62 @@
+.grid-container2{
+    display: grid; 
+    justify-items: center;
+    grid-template-columns: 300px auto auto;
+    grid-template-rows: 300px 50px;
+    grid-gap: 40px;
+    padding: 25px;
+ }
+
+ .Product-details{
+    grid-column: 1 / span 2;
+    grid-row: 1/span 1;
+    height: 300px;
+    background-color:rgba(255, 255, 255, 0.63);
+    margin: 0px;
+}
+
+.addButton{
+    grid-column: 1 / span 2;
+    grid-row: 2/span 2;
+    height: auto;
+    background-color:rgba(255, 255, 255, 0.63);
+    margin: 0px;
+}
+
+#text{
+    font-family: cursive;
+    color: black;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.Product-name{
+    font-family: cursive;
+    color: black;
+    font-size: 40px; 
+}
+
+.img{
+    grid-column: 3 / span 3;
+    grid-row: 1 / span 1;
+    height: 50px;
+    padding-top: 40px;
+    width: 450px;
+}
+
+.Add {
+    background-color:  #f4b7c7;
+    font-size: 25px;
+    font-family: cursive;
+    padding: 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: pulse 4s infinite ;
+}
+
+.Add:hover {
+    opacity: 1;
+}

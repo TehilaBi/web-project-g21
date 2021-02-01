@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Gift Card | Chloe's Cookies</title>
+    <link rel="stylesheet" href="{{ url_for('GiftCard.static', filename= '/css/giftCard.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= '/css/general.css') }}">
+    <script src="{{ url_for('static', filename='js/JS.js') }}"></script>
+
+</head>
+<body>
+    <div class = "header">
+        <div class="grid-container1">
+
+            <div class="logoImg">
+                <img id="logoImg" src="{{url_for('static', filename='images/logo.jpeg') }}" alt= "logo">
+            </div>
+               
+            <div class="titleName">
+               
+                <a id="titleName">Chloe's Cookies</a>
+            </div>
+            <div class="socialNetworks">
+                <br><br>
+                <a class="icon" href="https://www.instagram.com/chloe_cookies_/"><i class="fa fa-instagram"></i></a>
+                <a class="icon" href="https://wa.me/972542483012" ><i class="fa fa-whatsapp"></i></a>
+                <a class="icon" href="https://www.facebook.com/Chloes-Cookies-109434714280348" ><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="nav">
+
+            <div class= "navbar">
+                <br>
+                <a href='/' class="text">&nbsp;Home</a>
+                <a href='/about' class="text" id="active">About</a>
+                <a href='/Shop' class="text">Shop</a>
+                <a href='/Recipes' class="text">Recipes</a>
+                <a href='/Workshops' class="text">Workshops</a>
+                <a href='/GiftCard' class="text">GiftCard</a>
+            </div>
+
+             <div class="connect">
+                <br>
+                <a  href="/connect"><img id="connectImg" src="{{url_for('static', filename='images/connect.png') }}" alt= "connect" ></a>
+                <a><img id="shopImg" src="{{url_for('static', filename='images/shopBag.png') }}" alt= "shopBag" ></a>
+            </div>
+        
+    </div>
+        
+
+        <div class="main">
+            <div class="grid-container2">
+                <img class="img" src="{{url_for('GiftCard.static', filename='images/Gift Card 2.png') }}" alt= "GiftCard" >
+                <div class="text1">
+                    <p>
+                        You can purchase a gift card for a birthday, to say goodbye to a colleague, 
+                        <br>
+                        a gift for a birth, or just because you want to spoil someone :)
+                    </p>
+                </div>
+                <div class="details">
+                    <form>
+                        <label for="amount">Choose the amount: </label>
+                        <input id= "amountGift" type="text" placeholder="How much?" name="amount" required>
+                        <br>
+                        <label for="receiverName">Receiver's Name: </label>
+                        <input  id= "receiverNameGift" type="text" placeholder="To whom?" name="receiverName" required>
+                        <label for="receiverEmail">Receiver's Email: </label>
+                        <input  id= "receiverNameEmail" type="text" placeholder="To whom?" name="receiverEmail" required>
+                        <br>
+                        <button type="submit" class="sendButton" onclick="validateGiftInput(document.getElementById('amountGift').value,document.getElementById('receiverNameEmail').value)" value="Close" > Add to Cart</button>
+                    </form>
+                </div>
+
+
+                    
+                
+
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            <div id="footer">
+                <br>
+                <a href="/contact me" class="text">Contact Me</a>
+                <a class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</a>
+                <a class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipping Policy</a>
+                <a class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Newsletter</a>
+            </div>
+            <p class="textE" >Recommended resolution: 1440*900</p>
+        </div>
+
+
+
+
+
+</body>
+
+
+</html>
+

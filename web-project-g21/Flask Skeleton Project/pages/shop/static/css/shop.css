@@ -1,0 +1,134 @@
+.grid-container2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 115px 180px 180px;
+    justify-items: center;
+    font-family: cursive;
+}
+    
+
+.text1{
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    text-decoration: none;
+    text-align: center;
+    color: #f4b7c7;
+    font-size: 20px;
+    
+    
+}
+
+.Alfajores{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+    text-decoration: none;
+    text-align: center;
+    
+
+}
+
+.Amsterdam{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.ChipCookies{
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+.creamPuff{
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+.doughnut{
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.BigCookie{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+.Cake{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+.Bread{
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+
+#popup:hover{
+    width: 210px;
+}
+
+
+.filterDiv {
+    margin: 2px;
+    display: none; /* Hidden by default */
+  }
+
+  /* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+  }
+  
+/* Style the buttons */
+.btn {
+    font-weight: bold;
+    font-family: cursive;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    margin: 20px;
+    background-color: #f4b7c7;
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #cc96a5;
+
+  }
+
+
+
+               
+               
