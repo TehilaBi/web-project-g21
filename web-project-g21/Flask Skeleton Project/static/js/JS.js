@@ -21,7 +21,7 @@ function validateGiftInput(amount,email) {
 
     if(ValidAmount==true && ValidEmail==true){
         alert("Add to cart successfully!");
-        window.open('../html/newGeneral.html');
+        window.open('/home/templates/home1.html');
         window.close();
     
       }
@@ -46,7 +46,7 @@ function validateGiftInput(amount,email) {
       }
       else {
         alert("The workshop added to the cart!");
-        window.open('../html/newGeneral.html');
+        window.open('/');
         window.close();
       }
     }
@@ -55,7 +55,7 @@ function validateGiftInput(amount,email) {
     }
     else{
       alert("The workshop added to the cart!");
-      window.open('../html/newGeneral.html');
+      window.open('/home/templates/home1.html');
       window.close();
     }
     
@@ -93,7 +93,7 @@ if (!isNaN(text)) {
   
   if(ValidEmail==true && ValidPhone==true && ValidText==true){
     alert("Thank you! Your message has been received");
-    window.open('../html/newGeneral.html');
+    window.open('/home/templates/home1.html');
     window.close();
 
 }
@@ -143,7 +143,7 @@ function MessBox_connectUP(fname,lname,email,pas){
 // success
   if(ValidEmail==true && ValidName==true &&  ValidPas==true){
     alert("Connect successfully!");
-    window.open('../html/newGeneral.html');
+    window.open('/home/templates/home1.html');
     window.close();
   }
 
@@ -176,7 +176,7 @@ function MessBox_connectIN(email,pas){
 // success
 if(ValidEmail==true &&  ValidPas==true){
   alert("Connect successfully!");
-  window.open('../html/newGeneral.html');
+  window.open('/home/templates/home1.html');
   window.close();
 }
 
@@ -291,7 +291,7 @@ function forgotPassword(EmailAdress){
   
   if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(EmailAdress) ) {
     alert("New password sent to your Email!");
-    window.open('../html/newGeneral.html');
+    window.open('/home/templates/home1.html');
     window.close();
 } else{
   alert("Please enter valid Email address");
@@ -303,7 +303,7 @@ function forgotPassword(EmailAdress){
 
 function addedToCart(){
     alert("The product added to the cart!");
-    window.open('../html/newGeneral.html');
+    window.open("../pages/home/templates/home1.html");
     window.close();
 }
 
