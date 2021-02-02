@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template
 from flask import Flask, redirect,  flash
 from flask import request, session
-# import mysql.connector
+import mysql.connector
 
 
 # about blueprint definition

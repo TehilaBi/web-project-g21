@@ -1,7 +1,7 @@
 from flask import Flask, redirect, url_for, render_template, blueprints, jsonify
 from flask import request, session
 from datetime import timedelta
-# import mysql.connector
+import mysql.connector
 
 app = Flask(__name__)
 
