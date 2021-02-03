@@ -291,7 +291,7 @@ function forgotPassword(EmailAdress){
   
   if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(EmailAdress) ) {
     alert("New password sent to your Email!");
-    window.open('/home/templates/home1.html');
+    window.open('/');
     window.close();
 } else{
   alert("Please enter valid Email address");
@@ -303,7 +303,7 @@ function forgotPassword(EmailAdress){
 
 function addedToCart(){
     alert("The product added to the cart!");
-    window.open("../pages/home/templates/home1.html");
+    window.open('/');
     window.close();
 }
 
