@@ -2,51 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb8423bf-a109-4cac-a6d5-1a9dbef47d2f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Alphabetized Cassette Tapes Classic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/Home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/Recipe.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/about.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/connect.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/contactMe.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/giftCard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/newGeneral.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/product.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/shop.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/specificWorkshop.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/workshop.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/GiftCard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/Recipes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/Shop.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/Workshops.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/connect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/contact me.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/newGeneral.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/product.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/specificRecipe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/specificWorkshop.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/Alfajores.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/Amsterdam.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/Big cookie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/Chip Cookies.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/Gift Card 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/Krembo.jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/Macaroon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/Pancake.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/bread.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/bread2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/cake.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/cake2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/cake3.jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/connect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/cookies.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/cream puff.jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/doughnut.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/logo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/shopBag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../image/vegan.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +72,7 @@
       <workItem from="1612342516089" duration="1426000" />
       <workItem from="1612363240969" duration="622000" />
       <workItem from="1612363886067" duration="82000" />
-      <workItem from="1612365149265" duration="1566000" />
+      <workItem from="1612365149265" duration="2860000" />
     </task>
     <servers />
   </component>
