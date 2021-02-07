@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="059e54fd-0b60-4edb-8145-c976f9398cb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PartC/DB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../PartC/DB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web-project-g21.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web-project-g21.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/components/main_menu/main_menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/components/main_menu/static/css/main-menu.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/components/main_menu/static/js/main-menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/components/main_menu/templates/main_menu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/pages/connect/connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/pages/connect/connect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/pages/connect/templates/connect.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/pages/connect/templates/connect.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/pages/specific_recipe/specific_recipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/pages/specific_recipe/specific_recipe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/pages/specific_recipe/templates/specificRecipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/pages/specific_recipe/templates/specificRecipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/utilities/classes/Recipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/utilities/classes/Recipe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/utilities/classes/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/utilities/classes/User.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Flask Skeleton Project/app.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -78,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612683686312</updated>
       <workItem from="1612683688055" duration="7715000" />
+      <workItem from="1612700194224" duration="32000" />
     </task>
     <servers />
   </component>
