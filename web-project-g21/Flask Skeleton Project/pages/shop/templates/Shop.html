@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<html>
+<head>
+    <title>Shop | Chloe's Cookies</title>
+    <link rel="stylesheet" href={{ url_for('shop.static', filename= '/css/shop.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename= '/css/general.css') }}>
+    <script src={{ url_for('static', filename='js/JS.js') }}></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class = "header">
+        <div class="grid-container1">
+
+            <div class="logoImg">
+                <img id="logoImg" src="{{url_for('static', filename='images/logo.jpeg') }}" alt= "logo">
+            </div>
+               
+            <div class="titleName">
+               
+                <a id="titleName">Chloe's Cookies</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="nav">
+
+           <div class= "navbar">
+                <br>
+                <a href='/' class="text">&nbsp;Home</a>
+                <a href='/about' class="text" >About</a>
+                <a href='/Shop' class="text" id="active">Shop</a>
+                <a href='/Recipes' class="text">Recipes</a>
+                <a href='/Workshops' class="text">Workshops</a>
+                <a href='/GiftCard' class="text">GiftCard</a>
+            </div>
+
+
+            <div class="connect">
+                <br>
+                <a  href="/connect"><img id="connectImg" onload="filterSelection('all')" src="{{url_for('static', filename='images/connect.png' )  }}" alt= "connect" ></a>
+{#
+                <a><img id="shopImg" src="{{url_for('static', filename='images/shopBag.png') }}" alt= "shopBag"  ></a>
+#}
+            </div>
+        
+    </div>
+
+        <div class="main">
+            <div class="grid-container2">
+                <div id="myBtnContainer" class="text1">
+                    <a href='/Shop' ><button class="btn active" > Show all</button></a>
+                    <a href='/Shop/cakes' ><button class="btn" > Cakes</button></a>
+                    <a href='/Shop/cookies' ><button class="btn" > Cookies</button></a>
+                    <a href='/Shop/pastries' ><button class="btn" > Pastries</button></a>
+ 
+                </div>
+                  
+                <div class="filterDiv all">
+                    {% for name in namepicdesc %}
+                        &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;
+                        <a href="/product/{{ name[0] }}"><img  id="popup" src="{{ url_for('shop.static', filename= name[1]) }}" alt= "cookies" width="180px" height="125px"></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    {% endfor %}
+                    <br><br>
+                    {% for name in namepicasc %}
+                        &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;
+                        <a href="/product/{{ name[0] }}"><img  id="popup" src="{{ url_for('shop.static', filename= name[1]) }}" alt= "cookies" width="180px" height="125px"></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    {% endfor %}
+                    {% for name in namepic %}
+                        &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;
+                        <a href="/product/{{ name[0] }}"><img  id="popup" src="{{ url_for('shop.static', filename= name[1]) }}" alt= "cookies" width="180px" height="125px"></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    {% endfor %}
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+       
+    <div class="footer">
+        <div id="footer">
+            <br>
+            <a href="/contact me" class="text">Contact Me</a>
+                <div class="socialNetworks">
+                <a class="icon" href="https://www.instagram.com/chloe_cookies_/"><i class="fa fa-instagram"></i></a>
+                <a class="icon" href="https://wa.me/972542483012" ><i class="fa fa-whatsapp"></i></a>
+                <a class="icon" href="https://www.facebook.com/Chloes-Cookies-109434714280348" ><i class="fa fa-facebook"></i></a>
+                </div>
+        </div>
+        <p class="textE" >Recommended resolution: 1440*900</p>
+
+        
+    </div>
+
+
+
+
+
+
+</body>
+
+
+</html>
+

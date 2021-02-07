@@ -1,0 +1,74 @@
+.grid-container2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 130px auto auto;
+    justify-items: center;
+
+}
+
+
+.text1{
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.cake{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+    text-decoration: none;
+    text-align: center;
+    margin: 50px;
+    justify-items: center;
+    align-items: center;
+
+}
+.nameRec{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 3;
+    text-decoration: none;
+    text-align: left;
+    margin: 50px;
+
+}
+
+.cookies{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 13;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.vegan{
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+.bread{
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#text{
+    font-family: cursive;
+    color: black;
+    font-size: 20px;
+}
+
+#popup:hover{
+    width: 200px;
+}
