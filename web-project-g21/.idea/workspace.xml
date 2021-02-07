@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="059e54fd-0b60-4edb-8145-c976f9398cb0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../PartC/DB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../PartC/DB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b402e44b-e3d2-4b5e-b9d7-f2837ed7ac28.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b402e44b-e3d2-4b5e-b9d7-f2837ed7ac28.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web-project-g21.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web-project-g21.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/pages/connect/connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/pages/connect/connect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/pages/connect/static/css/connect.css" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/pages/connect/static/css/connect.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/pages/connect/templates/connect.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/pages/connect/templates/connect.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/pages/product/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/pages/product/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/pages/product/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/pages/product/templates/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/pages/specific_workshop/specific_workshop.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/pages/specific_workshop/specific_workshop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/pages/specific_workshop/templates/specificWorkshop.html" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/pages/specific_workshop/templates/specificWorkshop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/static/js/JS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/static/js/JS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/utilities/classes/Product.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/utilities/classes/Product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask Skeleton Project/utilities/classes/Workshop.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask Skeleton Project/utilities/classes/Workshop.py" afterDir="false" />
-    </list>
+    <list default="true" id="059e54fd-0b60-4edb-8145-c976f9398cb0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,6 +128,7 @@
       <workItem from="1612683688055" duration="7715000" />
       <workItem from="1612700194224" duration="32000" />
       <workItem from="1612715887491" duration="13561000" />
+      <workItem from="1612730178897" duration="9000" />
     </task>
     <servers />
   </component>
@@ -161,6 +145,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
