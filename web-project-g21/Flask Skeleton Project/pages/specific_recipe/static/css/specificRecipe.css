@@ -27,6 +27,13 @@
     line-height: 40px;
     font-weight: bold;
 }
+
+p{
+    font-family: cursive;
+    color: black;
+    font-size: 15px;
+    line-height: 40px;
+}
 .Recipe-name{
     font-family: cursive;
     color: black;

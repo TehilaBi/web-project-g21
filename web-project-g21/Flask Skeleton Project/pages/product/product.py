@@ -2,7 +2,6 @@ from flask import Blueprint, render_template
 from flask import Flask, redirect,  flash
 from flask import request, session
 import mysql.connector
-import easygui
 from utilities.classes.Product import Product
 
 
@@ -51,5 +50,5 @@ def purchaseprod(name):
         prod.product_id = prodid
         prod.Price = totalprice
         prod.insertPurch()
-    #easygui.msgbox("This is a message!", title="simple gui")
+
     return redirect('/Shop/')
