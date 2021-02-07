@@ -41,3 +41,8 @@ class Workshop:
         query = "SELECT workshop_name FROM workshops;"
         query_result = dbManager.fetch(query)
         return query_result
+
+    def workshopid(name):
+        query = "SELECT workshop_Id FROM workshops where workshop_name = '%s';" % name
+        query_result = dbManager.fetch(query)
+        return query_result

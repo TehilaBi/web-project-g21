@@ -39,12 +39,18 @@ def main_func_sin():
         us.user_password = request.form['pwdin']
         if us.Check():
             session['logged_in'] = True
-            session['Email'] = us[0].email
-            session['Password'] = us[0].user_password
+            session['email'] = us[0].email
+            session['user_password'] = us[0].user_password
             flash('You are in!')
         else:
             flash('email not in the system!')
     return redirect('/connect')
+
+
+@connect.route('/Log_out')
+def Log_out():
+    session.clear()
+    return redirect('/')
 
 # Routes
 @connect.route('/upd', methods=['GET', 'POST'])

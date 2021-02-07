@@ -59,18 +59,15 @@
                         {% for pri in price  %}
                             {{ pri.Price }}
                         {% endfor %} NIS
-{#                    <p>
-                       Date:
-                        {% for workshop_date in workshop_date  %}
-                            {{ workshop_date.workshopdate }}
-                        {% endfor %}
-                    <p>#}
                     <br>
                     <label id="text" for="Date">Choose Date:</label>
                     <input type="date" id="dateWorkshop" name="dateWorkshop" >
                     <br><br>
-
-                 <button type="submit" class="Add" onclick="validateDate(document.getElementById('dateWorkshop').value)" value="Close"  > Add to Cart</button>
+                    <form action="/requestpruchwork/{{ name }}" method="POST">
+                        <label for="quantitywork">Choose the quantity: </label>
+                        <input id= "quantitywork" type="number" placeholder="How much?" name="quantitywork" required>
+                        <button type="submit" class="Add" onclick="validateDate(document.getElementById('dateWorkshop').value)" value="Close"  > Add to Cart</button>
+                    </form>
 
                 </div>
                 <div class="img">

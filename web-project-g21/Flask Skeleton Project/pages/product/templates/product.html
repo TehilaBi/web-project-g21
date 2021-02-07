@@ -57,18 +57,18 @@
                         <br>
                         <br>
                         Price:
-                        {% for pri in price  %}
-                            {{ pri.Price }}
-                        {% endfor %} NIS
+                            {{ price }} NIS
                     <p>
                 </div>
 
                 <div class="addButton">
-                    
-                    <button type="submit" class="Add" onclick="addedToCart()" value="Close"  > Add to Cart</button>
-                </div> 
-                 
-                    <img id="img" src="{{ url_for('product.static', filename= link) }}" alt= "Cookies">
+                    <form action="/requestpruch/{{ name }}" method="POST">
+                        <label for="quantity">Choose the quantity: </label>
+                        <input id= "quantity" type="number" placeholder="How much?" name="quantity" required>
+                        <button type="submit" class="Add" onclick="addedToCart()" value="Close"> Add to Cart</button>
+                    </form>
+                </div>
+                <img id="img" src="{{ url_for('product.static', filename= link) }}" alt= "Cookies">
             </div>
         </div>
 

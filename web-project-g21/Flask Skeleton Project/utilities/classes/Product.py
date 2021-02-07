@@ -44,3 +44,9 @@ class Product:
         query = "SELECT Picture FROM products where name_product = '%s';" % name
         query_result = dbManager.fetch(query)
         return query_result
+
+    def productid(name):
+        query = "SELECT product_Id FROM products where name_product = '%s';" % name
+        query_result = dbManager.fetch(query)
+        return query_result
+

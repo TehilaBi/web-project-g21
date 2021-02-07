@@ -218,9 +218,9 @@ function signInClick() {
 }
 
 function ForgetClick() {
-  var x = document.getElementById("signin");
+  var z = document.getElementById("signin");
   var y = document.getElementById("signup");
-  var z = document.getElementById("update");
+  var x = document.getElementById("update");
   var w = document.getElementById("delete");
   if (z.style.display === "none") {
     z.style.display = "block";
@@ -248,8 +248,6 @@ function DeleteClick() {
     w.style.display = "none";
   }
 }
-
-
 
 
 // able and disable fields in the forms
@@ -347,6 +345,7 @@ function forgotPassword(EmailAdress){
 
 function addedToCart(){
     alert("The product added to the cart!");
+
     window.open('/');
     window.close();
 }

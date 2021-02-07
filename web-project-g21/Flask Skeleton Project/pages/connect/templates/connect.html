@@ -48,74 +48,70 @@
         <div class="main">
             <div class="grid-container2">
                 <div class="text1">
-
-            <h1 style="color: #f4b7c7; text-align: center;">Connect</h1>
-            <br>
-            <div class="button" style="text-align: center;">
-            <button class="sendB" onclick="signUpClick(),able_fn(),able_ln(),able_e_u(),able_p_u(), disdable_e_i(), disable_p_i()">Sign Up</button>
-            <button class="sendB" onclick="signInClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Sign In</button>
-            <button class="sendB" onclick="DeleteClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Delete my account</button>
-            <button class="sendB" onclick="ForgetClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Forget Password</button>
-                <br>
-                {% for message in get_flashed_messages() %}
-                        <p>{{ message }}</p>
-                {% endfor %}
-            </div>
-            <div class="forms">
-            <form action="/sup" method="POST" id="signup" style="display: none;" >
-    
-                <label for="FirstName"> <b>First Name:</b> </label>
-                <input type="text" id="FirstName" name="FirstName" placeholder="Enter your first name .." style="width: 30%; height: 50px;" required>
-                <br>
-                <label for="LastName"><b>Last Name:</b></label>&nbsp;
-                <input type="text" id="LastName" name="LastName" placeholder="Enter your last name .." style="width: 30%; height: 50px;" required>
-                <br>
-                <label for="Emailup"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" id="Emailup" name="Emailup" placeholder="Enter your Email Address .." style="width: 30%; height: 50px;" required>
-                <br>
-                <label for="pwdup"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="password" id="pwdup" name="pwdup"  maxlength="8" placeholder="Choose a password (max 8 digits)" style="width: 30%; height: 50px;" required>
-                <br>
-                <button type="submit" class="sendB" onclick="MessBox_connectUP(document.getElementById('FirstName').value,document.getElementById('LastName').value,document.getElementById('Emailup').value, document.getElementById('pwdup'))"  value="Close">Go!</button>
-
-            
-            </form>
-
-            <form action="/sin" method="POST" id="signin" style="display: none;">
-
-    
-                <label for="Emailin"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" id="Emailin" name="Emailin" placeholder="Enter Email address you sign up with .." style="width: 30%; height: 50px;" required>
-                <br>
-                <label for="pwdin"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="password" id="pwdin" name="pwdin"  maxlength="8" placeholder="Enter your password" style="width: 30%; height: 50px;" required>
-                <br>
-                <button type="submit" class="sendB" onclick="MessBox_connectIN(document.getElementById('Emailin').value, document.getElementById('pwdin'))"   value="Close">Go!</button>
-
-            </form>
-
-                <form action="/upd" method="POST" class = "form1" id="update">
-
-                    <label for="Emailverify"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="text" id="Emailverify" name="Emailverify" placeholder="Enter Email address"  required>
-                    <label for="pwdnew"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="text" id="pwdnew" name="pwdnew" placeholder="Enter New Password" style="width: 30%; height: 50px;" required>
+                    <h1 id= headconnect >Connect</h1>
                     <br>
-                    <button class="sendB"   value="close">Update</button>
+                    <div id="buttons">
+                        <button class="sendB" onclick="signUpClick(),able_fn(),able_ln(),able_e_u(),able_p_u(), disdable_e_i(), disable_p_i()">Sign Up</button>
+                        <button class="sendB" onclick="signInClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Sign In</button>
+                        <button class="sendB" onclick="ForgetClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Forget Password</button>
+                        <button class="sendB" onclick="DeleteClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Delete my account</button>
 
+                        <br>
+                        {% for message in get_flashed_messages() %}
+                            <p>{{ message }}</p>
+                        {% endfor %}
+
+
+                <form action="/Log_out">
+                <button id=logout class="sendB" >Log Out</button>
                 </form>
 
-                <form action="/delete" method="POST" class = "form1" id="delete">
-                    <label for="Emaildelete"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="text" id="Emaildelete" name="Emaildelete" placeholder="Enter Email address"  required>
-                    <label for="passdelete"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="password" id="passdelete" name="passdelete" placeholder="Enter Password"  required>
-                    <br>
-                    <button class="sendB"  value="close">Delete</button>
-                </form>
+                    </div>
 
-        </div>
+                    <div class="forms">
+                        <form action="/sup" method="POST" id="signup" class = "form1" >
+                            <label for="FirstName"> <b>First Name:</b> </label>
+                            <input type="text" id="FirstName" name="FirstName" placeholder="Enter your first name .." id = inputs required>
+                            <br>
+                            <label for="LastName"><b>Last Name:</b></label>&nbsp;
+                            <input type="text" id="LastName" name="LastName" placeholder="Enter your last name .." id = inputs required>
+                            <br>
+                            <label for="Emailup"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" id="Emailup" name="Emailup" placeholder="Enter your Email Address .." id = inputs required>
+                            <br>
+                            <label for="pwdup"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="password" id="pwdup" name="pwdup"  maxlength="8" placeholder="Choose a password (max 8 digits)" id = inputs required>
+                            <br>
+                            <button type="submit" class="sendB" onclick="MessBox_connectUP(document.getElementById('FirstName').value,document.getElementById('LastName').value,document.getElementById('Emailup').value, document.getElementById('pwdup'))"  value="Close">Go!</button>
+                        </form>
 
+                        <form action="/sin" method="POST" id="signin" class = "form1">
+
+                            <label for="Emailin"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" id="Emailin" name="Emailin" placeholder="Enter Email address you sign up with .." id = inputs required><br>
+                            <label for="pwdin"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="password" id="pwdin" name="pwdin"  maxlength="8" placeholder="Enter your password" id = inputs required><br>
+                            <button type="submit" class="sendB" onclick="MessBox_connectIN(document.getElementById('Emailin').value, document.getElementById('pwdin'))"   value="Close">Go!</button>
+                        </form>
+
+                        <form action="/upd" method="POST" class = "form1" id="update">
+                            <label for="Emailverify"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" id="Emailverify" name="Emailverify" placeholder="Enter Email address"  required>
+                            <label for="pwdnew"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" id="pwdnew" name="pwdnew" placeholder="Enter New Password" id = inputs required>
+                            <br>
+                            <button class="sendB" value="close">Update</button>
+                        </form>
+
+                        <form action="/delete" method="POST" class = "form1" id="delete">
+                            <label for="Emaildelete"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" id="Emaildelete" name="Emaildelete" placeholder="Enter Email address"  required>
+                            <label for="passdelete"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="password" id="passdelete" name="passdelete" placeholder="Enter Password"  required>
+                            <br>
+                            <button class="sendB"  value="close">Delete</button>
+                        </form>
+                    </div>
 
                 </div>
             </div>

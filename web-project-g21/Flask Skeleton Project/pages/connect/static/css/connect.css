@@ -1,8 +1,8 @@
 
 .grid-container2{
     display: grid;
-    grid-template-columns: 300px auto auto;
-    grid-template-rows: 550px auto auto;
+    grid-template-columns: 400px auto auto;
+    grid-template-rows: 650px auto auto;
     grid-gap: 40px;
     padding: 25px;
 }
@@ -26,7 +26,7 @@
     text-align: left;
     color:black;
 }
-.form1{
+.forms{
     grid-column: 1 / span 3;
     grid-row: 3 / span 3;
     text-decoration: none;
@@ -38,6 +38,30 @@
  .form1{
      display: none;
  }
+
+
+#buttons{
+     text-align: center;
+ }
+
+#headconnect{
+    color: #f4b7c7;
+    text-align: center;
+}
+
+#inputs{
+    width: 30%;
+    height: 50px;
+}
+
+#logout{
+    color: darkred;
+
+}
+
+#logout_right{
+    text-align: right;
+}
 input{
     width: 30%;
     height: 50px;
