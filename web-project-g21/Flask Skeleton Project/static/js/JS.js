@@ -189,10 +189,12 @@ function signUpClick() {
   var x = document.getElementById("signup");
   var y = document.getElementById("signin");
   var z = document.getElementById("update");
+  var w = document.getElementById("delete");
   if (x.style.display === "none") {
     x.style.display = "block";
     y.style.display = "none";
     z.style.display = "none";
+    w.style.display = "none";
   } else {
     x.style.display = "none";
   }
@@ -203,10 +205,13 @@ function signInClick() {
   var x = document.getElementById("signin");
   var y = document.getElementById("signup");
   var z = document.getElementById("update");
+  var w = document.getElementById("delete");
   if (x.style.display === "none") {
     x.style.display = "block";
     y.style.display = "none";
     z.style.display = "none";
+    w.style.display = "none";
+
   } else {
     x.style.display = "none";
   }
@@ -216,15 +221,34 @@ function ForgetClick() {
   var x = document.getElementById("signin");
   var y = document.getElementById("signup");
   var z = document.getElementById("update");
+  var w = document.getElementById("delete");
   if (z.style.display === "none") {
     z.style.display = "block";
     y.style.display = "none";
     x.style.display = "none";
+    w.style.display = "none";
 
   } else {
     z.style.display = "none";
   }
 }
+
+function DeleteClick() {
+  var x = document.getElementById("signin");
+  var y = document.getElementById("signup");
+  var z = document.getElementById("update");
+  var w = document.getElementById("delete");
+  if (w.style.display === "none") {
+    w.style.display = "block";
+    z.style.display = "none";
+    y.style.display = "none";
+    x.style.display = "none";
+
+  } else {
+    w.style.display = "none";
+  }
+}
+
 
 
 
@@ -293,6 +317,7 @@ function able_p_i(){
 
 
 
+/*
 function forgotPassword(EmailAdress){
 
   var newPass = Math.random().toString(36).slice(-8);
@@ -316,6 +341,7 @@ function forgotPassword(EmailAdress){
 }
 
 }
+*/
 
 
 

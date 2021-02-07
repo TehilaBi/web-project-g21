@@ -54,7 +54,9 @@
             <div class="button" style="text-align: center;">
             <button class="sendB" onclick="signUpClick(),able_fn(),able_ln(),able_e_u(),able_p_u(), disdable_e_i(), disable_p_i()">Sign Up</button>
             <button class="sendB" onclick="signInClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Sign In</button>
+            <button class="sendB" onclick="DeleteClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Delete my account</button>
             <button class="sendB" onclick="ForgetClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Forget Password</button>
+
             </div>
             <div class="forms">
             <form action="/sup" method="POST" id="signup" style="display: none;" >
@@ -96,7 +98,15 @@
                     <label for="pwdnew"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="text" id="pwdnew" name="pwdnew" placeholder="Enter New Password" style="width: 30%; height: 50px;" required>
                     <br>
-                    <button class="sendB" onclick="forgotPassword(document.getElementById('emailupd').value)"  value="close">Enter</button>
+                    <button class="sendB"   value="close">Update</button>
+                </form>
+
+                <form action="/delete" method="POST" class = "form1" id="delete">
+
+                    <label for="Emaildelete"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="Emaildelete" name="Emaildelete" placeholder="Enter Email address"  required>
+                    <br>
+                    <button class="sendB"  value="close">Delete</button>
                 </form>
 
         </div>
