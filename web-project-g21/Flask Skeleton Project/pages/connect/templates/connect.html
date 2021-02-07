@@ -56,7 +56,10 @@
             <button class="sendB" onclick="signInClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Sign In</button>
             <button class="sendB" onclick="DeleteClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Delete my account</button>
             <button class="sendB" onclick="ForgetClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">Forget Password</button>
-
+                <br>
+                {% for message in get_flashed_messages() %}
+                        <p>{{ message }}</p>
+                {% endfor %}
             </div>
             <div class="forms">
             <form action="/sup" method="POST" id="signup" style="display: none;" >
@@ -99,12 +102,14 @@
                     <input type="text" id="pwdnew" name="pwdnew" placeholder="Enter New Password" style="width: 30%; height: 50px;" required>
                     <br>
                     <button class="sendB"   value="close">Update</button>
+
                 </form>
 
                 <form action="/delete" method="POST" class = "form1" id="delete">
-
                     <label for="Emaildelete"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="text" id="Emaildelete" name="Emaildelete" placeholder="Enter Email address"  required>
+                    <label for="passdelete"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="password" id="passdelete" name="passdelete" placeholder="Enter Password"  required>
                     <br>
                     <button class="sendB"  value="close">Delete</button>
                 </form>

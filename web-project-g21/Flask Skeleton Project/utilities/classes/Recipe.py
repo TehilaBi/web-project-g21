@@ -29,12 +29,18 @@ class Recipe:
     def repiceing(namerecipe):
          query = "select Ingredient_list from recipes where Recipe_name = '%s';" % namerecipe
          query_result = dbManager.fetch(query)
-         return query_result
+         result = ""
+         for ingredient in query_result:
+             result = ingredient.Ingredient_list
+         return result
 
     def repiceinst(namerecipe):
          query = "select preparation_steps from recipes where Recipe_name = '%s';" % namerecipe
          query_result = dbManager.fetch(query)
-         return query_result
+         result = ""
+         for instruction in query_result:
+             result = instruction.preparation_steps
+         return result
 
     def recipepic(namerecipe):
         query = "select Picture from recipes where Recipe_name ='%s';" % namerecipe

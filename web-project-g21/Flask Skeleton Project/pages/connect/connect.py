@@ -58,3 +58,16 @@ def main_func_upd():
     else:
         redirect('/connect')
     return redirect('/connect')
+
+
+@connect.route('/delete', methods=['GET', 'POST'])
+def main_func_delete():
+    if request.method == 'POST':
+        us = User()
+        us.email = request.form['Emaildelete']
+        us.user_password = request.form['passdelete']
+        us.delete_user()
+        flash("The user was deleted")
+    else:
+        redirect('/connect')
+    return redirect('/connect')

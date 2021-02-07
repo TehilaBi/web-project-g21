@@ -15,11 +15,12 @@ def main_func(name):
     ing = Recipe.repiceing(name)
     ins = Recipe.repiceinst(name)
     picture = Recipe.recipepic(name)
-
+    instructions = ins.split('$')
+    ingredients = ing.split('$')
     for pic in picture:
         picturelink = '/images/' + name + '.png'
         link = '../web-project-g21/Flask Skeleton Project/pages/specific_recipe/static/images/' + name + '.png'
         with open(link, 'wb') as f:
             f.write(pic.Picture)
 
-    return render_template('specificRecipe.html', name=name, level=level, ingredients=ing, instructions=ins,picture=picturelink)
+    return render_template('specificRecipe.html', name=name, level=level, ingredients=ingredients, instructions=instructions, picture=picturelink)

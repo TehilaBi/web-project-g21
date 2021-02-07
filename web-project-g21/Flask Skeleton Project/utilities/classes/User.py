@@ -31,3 +31,9 @@ class User:
         if query_result:
             dbManager.commit('UPDATE users SET user_password=%s where email=%s ', (self.user_password, self.email))
 
+    def delete_user(self):
+        query = "SELECT * FROM users where email = '%s';" % self.email
+        query_result = dbManager.fetch(query)
+        if query_result:
+            dbManager.commit('DELETE FROM users where email=%s and user_password=%s ', (self.email, self.user_password))
+

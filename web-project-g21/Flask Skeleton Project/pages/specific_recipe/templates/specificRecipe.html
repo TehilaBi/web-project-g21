@@ -58,16 +58,16 @@
                     {% endfor %}  <br>
                 </p>
                 <p id="text" >Ingredients:</p>
-                <br>
-                    {% for ingredient in ingredients  %}
-                        {{ ingredient.Ingredient_list }}
-                    {% endfor %}  <br>
+
+                {% for ingredient in ingredients  %}
+                    <p>{{ ingredient  }}</p>
+                {% endfor %}  <br>
 
                 <p id="text" >Instructions:</p>
-                <br>
-                    {% for instruction in instructions  %}
-                        {{ instruction.preparation_steps }}
-                    {% endfor %}  <br>
+
+                {% for para in instructions %}
+                    <p>{{para}}</p>
+                {% endfor %}
 
             </div>
             <div class="img">
